@@ -18,7 +18,7 @@ func newDeck() deck {
 
 	for suitsIndex := 0; suitsIndex < len(cardSuits); suitsIndex++ {
 		for valIndex := 0; valIndex < len(cardValues); valIndex++ {
-			cards = append(cards, cardValues[valIndex]+" Of "+cardSuits[suitsIndex])
+			cards = append(cards, cardValues[valIndex]+" of "+cardSuits[suitsIndex])
 		}
 	}
 

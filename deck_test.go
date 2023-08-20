@@ -12,12 +12,12 @@ func TestNewDeck(t *testing.T) {
 		t.Error("Expected deck length to be 16, but got", len(d))
 	}
 
-	if d[0] != "Ace Of Spades" {
-		t.Error("Expected first card in deck to be Ace Of Spades, but it is", d[0])
+	if d[0] != "Ace of Spades" {
+		t.Error("Expected first card in deck to be Ace of Spades, but it is", d[0])
 	}
 
-	if d[len(d)-1] != "King Of Clubs" {
-		t.Error("Expected first card in deck to be King Of Clubs, but it is", d[len(d)-1])
+	if d[len(d)-1] != "King of Clubs" {
+		t.Error("Expected first card in deck to be King of Clubs, but it is", d[len(d)-1])
 	}
 }
 
@@ -37,12 +37,12 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 		t.Error("Expected deck length to be 16, but got", len(deckFromFile))
 	}
 
-	if deckFromFile[0] != "Ace Of Spades" {
-		t.Error("Expected first card in deck to be Ace Of Spades, but it is", deckFromFile[0])
+	if deckFromFile[0] != "Ace of Spades" {
+		t.Error("Expected first card in deck to be Ace of Spades, but it is", deckFromFile[0])
 	}
 
-	if deckFromFile[len(d)-1] != "King Of Clubs" {
-		t.Error("Expected first card in deck to be King Of Clubs, but it is", deckFromFile[len(d)-1])
+	if deckFromFile[len(d)-1] != "King of Clubs" {
+		t.Error("Expected first card in deck to be King of Clubs, but it is", deckFromFile[len(d)-1])
 	}
 
 	os.Remove("_testdeck")
